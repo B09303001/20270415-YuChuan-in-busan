@@ -39,3 +39,29 @@
 .notice[data-fee] li strong{color:var(--ink)}
 @media(max-width:760px){.hero h1{max-width:10em;line-height:1.24}}
 @media(max-width:760px){.hero h1{font-size:clamp(25px,7vw,43px)}}
+
+.hotel-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+header .brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header .brand span {
+  margin-left: 0;
+}
+
+.header-logo {
+  display: block;
+  width: clamp(64px, 10vw, 92px);
+  height: auto;
+  max-height: 34px;
+  object-fit: contain;
+}
