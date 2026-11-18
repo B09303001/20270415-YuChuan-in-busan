@@ -8,7 +8,31 @@
       content="宇創工程專屬釜山五日海岸旅程：膠囊列車、汗蒸幕、LUGE、遊艇夜遊與海鮮饗宴。"
       name="description"
     />
-    <link href="style.css" rel="stylesheet" />
+    .hotel-photo {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    margin-bottom: 16px;
+  }
+
+    header .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+    header .brand span {
+    margin-left: 0;
+  }
+
+   .header-logo {
+   display: block;
+   width: clamp(64px, 10vw, 92px);
+   height: auto;
+   max-height: 34px;
+   object-fit: contain;
+  }
     <link rel="icon" type="image/svg+xml" href="assets/favicon-korea.svg?v=1">
   </head>
   <body>
@@ -362,7 +386,7 @@
                 aria-pressed="false"
               >
                 <small>DAY 03 / 店址待確認</small>
-                <strong>韓系彩妝站</strong>
+                <strong>韓系彩妝站(停留約1小時)</strong>
                 <span>店址待確認</span>
               </button>
               <button
@@ -708,7 +732,7 @@
             <span>
               <h3>彩色山城，從松島到影島</h3>
               <p>
-                彩妝站 → 甘川洞文化村 → 松島海上纜車（來回） → 龍宮雲橋 → P. Ark 影島咖啡館 →
+                彩妝站(停留約1小時) → 甘川洞文化村 → 松島海上纜車（來回） → 龍宮雲橋 → P. Ark 影島咖啡館 →
                 南浦洞購物商圈
               </p>
             </span>
@@ -726,7 +750,7 @@
             />
             <div>
               <div class="stop">
-                <h4>韓系彩妝站</h4>
+                <h4>韓系彩妝站(停留約1小時) </h4>
                 <p>安排一站彩妝購物，看看韓系美妝與保養品。</p>
               </div>
               <div class="stop">
@@ -883,6 +907,13 @@
           </p>
           <div class="hotel-grid">
             <article>
+              <img
+                class="hotel-photo"
+                src="ahttps://i0.wp.com/itravelblog.net/wp-content/uploads/2025/06/SOTA-SUITE-Busan-Seomyeon-4.jpeg?resize=1200%2C800&ssl=1"
+                alt="Sota Suite Busan Seomyeon 飯店照片"
+                loading="lazy"
+                decoding="async"
+              />
               <p class="eyebrow">西面商圈</p>
               <h3>Sota Suite Busan Seomyeon</h3>
               <p>
@@ -904,6 +935,13 @@
               </a>
             </article>
             <article>
+              <img
+                class="hotel-photo"
+                src="https://allzip-archieve4h-residence.busan-hotel.com/data/Pics/OriginalPhoto/17731/1773113/1773113045/archieve-4h-hotel-busan-busan-pic-2.JPEG"
+                alt="Allzib Archive 4H Busan 飯店照片"
+                loading="lazy"
+                decoding="async"
+              />
               <p class="eyebrow">凡一站一帶</p>
               <h3>Allzib Archive 4H Busan</h3>
               <p>
@@ -925,6 +963,13 @@
               </a>
             </article>
             <article>
+              <img
+                class="hotel-photo"
+                src="https://image.kkday.com/v2/image/get/w_1900%2Cc_fit%2Cq_55/s1.kkday.com/dyhotel_321925/20260717121501_rrY6X/jpg"
+                alt="Central Seven Hotel by Kwon Busan Seomyeon 飯店照片"
+                loading="lazy"
+                decoding="async"
+              />
               <p class="eyebrow">西面・釜田市場一帶</p>
               <h3>Central Seven Hotel by Kwon Busan Seomyeon</h3>
               <p>位於西面與釜田市場一帶，步行可前往釜田市場，也方便搭乘地鐵探索市區。</p>
@@ -998,6 +1043,10 @@
                   <strong>單人房與三人同住</strong>
                   　指定單人房（Single Room）須補價差。三人同住需求請最遲於出發前 15
                   個工作天（不含例假日）通知承辦人員，並同步確認若無法安排三人同住，哪一位旅客將另行入住。後續依旅遊契約的住宿原則辦理。
+                </li>
+                <li>
+                  <strong>不進站費用</strong>
+                  　不進站須補價差$6,000/位
                 </li>
                 <li>
                   <strong>護照辦理</strong>
@@ -1142,9 +1191,14 @@
       </section>
     </main>
     <footer>
-      <a class="brand" href="#">
-        BUSAN
-        <span>宇創工程．享趣釜山</span>
+    <a class="brand" href="#">
+      <img
+        class="header-logo"
+        src="assets/liontravel-logo.png"
+        alt="雄獅旅遊"
+      />
+      BUSAN
+      <span>宇創工程．享趣釜山</span>
       </a>
       <p>
         宇創同行，共築好時光。
@@ -1625,7 +1679,7 @@
           embed: "https://maps.google.com/maps?q=Nampo-dong+Busan&output=embed&hl=zh-TW&z=14",
         },
         {
-          name: "韓系彩妝站",
+          name: "韓系彩妝站(停留約1小時) ",
           en: "Cosmetics stop",
           day: "3",
           area: "店址待確認",
